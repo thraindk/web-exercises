@@ -1,0 +1,6 @@
+<!DOCTYPE Rechnung [
+<!ELEMENT Rechnung (Anschrift, Datum, Positionen)>
+...
+<!ELEMENT Position (Name, Menge, Einzelpreis, Gesamtpreis)>
+<!ATTLIST Position id CDATA #REQUIRED>
+]>

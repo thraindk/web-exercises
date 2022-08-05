@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Titel </title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+</head>
+
+<body>
+    <nav>Navigation
+        <a href="www.moodle.hs-mannheim.de" alt="moodle">Link zu Moodle</a>
+        <a href="www.moodle.hs-mannheim.de" alt="moodle">Zum Impressum</a>
+        <a href="www.google.de" alt="moodle">Google-Suche</a>
+    </nav>
+
+    <h1 id='überschrift'>Überschrift</h1>
+    <h2>Text</h2>
+    <p>Goldene Kiwis schmecken am Besten</p>
+
+
+    <!-- division = abschnitt -->
+    <div class="textabschnitt">
+        <div class="text"><span id="test">Lorem ipsum dolor sit amet, <span id="amet">consetetur sadipscing
+                    elitr</span></span>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.</div>
+        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+
+<input type="button" id="b1" name="row" value="Farbe ändern"/>
+
+    <h2>Bilder</h2>
+    <img class="bild" src="angrypepe.png" alt="pepe is angry" />
+    <img class="bild" src="grandma.jpg" alt="grandma" />
+
+    <h2>Tabelle</h2>
+    <table id="tabelle">
+            <thead>
+                <th>Name</th>
+                <th>Nachname</th>
+                <th>Studiengang</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Angela</td>
+                    <td>Heinrich</td>
+                    <td>CSB</td>
+                </tr>
+                <tr>
+                    <td>Cedric</td>
+                    <td>Mingham</td>
+                    <td>CSB</td>
+                </tr>
+                <tr>
+                    <td>Vanessa</td>
+                    <td>Behawetz</td>
+                    <td>CSB</td>
+                </tr>
+                <tr>
+                    <td>Alperen</td>
+                    <td>Kürücü</td>
+                    <td>CSB</td>
+                </tr>
+
+            </tbody>
+    </table>
+    
+<input type="button" id="b2" name="row" value="Reihe hinzufügen"/>
+
+    <ul>
+        <li>Dopatka</li>
+        <li>Klaus</li>
+        <li>Hummel</li>
+        <li>Schram</li>
+    </ul>
+
+    <ol>
+        <li>Föller-Nord</li>
+        <li>Steinberger</li>
+        <li>Kaiser</li>
+        <li>Ihme</li>
+    </ol>
+
+
+
+    <!-- Rahmen um zum Beispiel ein Formular-->
+    <fieldset>
+        <legend>Obstsorten</legend>
+        <input type="radio" name="obst" value="Apfel">Apfel</input>
+        <input type="radio" name="obst" value="Banane">Banane</input>
+        <input type="checkbox" name="obst" value="Balubeeren">Blaubeere</input>
+        <input type="checkbox" name="obst" value="Edbeere">Edbeere</input>
+        <input type="textfield" name="obst" value="eigenes Obst"></input>
+        <input type="range" name="obst" value="30" min="0" max="100" />
+
+    </fieldset>
+
+    <fieldset id="Anmeldung">
+        <legend>Anmelden</legend>
+        <label for="benutzer">Benutzer</label>
+        <input type="text" name="benutzer" />
+        Passwort:
+        <input type="password" name="pwd" />
+        Alter
+        <input type="number" name="alter" value=15>
+        <input class="button" type="button" name="login" value="Anmelden" />
+    </fieldset>
+
+
+    <br />
+    <select>
+        <legend>Gerichte</legend>
+        <option value="Pizza">Pizza</br>
+        <option value="Bratkartoffeln">Bartkartoffeln</br>
+        <option value="Paella">Paella</br>
+    </select>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

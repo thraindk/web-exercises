@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Rechnung>
+
+	<Anschrift>
+		<Strasse>straße</Strasse>
+		<Hausnr>1</Hausnr>
+		<Plz>1234</Plz>
+		<Ort>stadt</Ort>
+	</Anschrift>
+	
+	<Datum>2001-10-26</Datum>
+	
+	<Positionen>
+		<Position id="1">
+			<Name>Socken</Name>
+			<Menge>2</Menge>
+			<Einzelpreis>2.5</Einzelpreis>
+			<Gesamtpreis>10.0</Gesamtpreis>
+		</Position>
+		<Position id="2">
+			<Name>Pullover</Name>
+			<Menge>10</Menge>
+			<Einzelpreis>9.95</Einzelpreis>
+			<Gesamtpreis>99.5</Gesamtpreis>
+		</Position>
+		 <Position id="3">
+			<Name>Schuhe</Name>
+			<Menge>3</Menge>
+			<Einzelpreis>14.95</Einzelpreis>
+			<Gesamtpreis>100.0</Gesamtpreis>
+		</Position>
+	</Positionen>
+	
+</Rechnung>

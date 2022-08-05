@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titel</title>
+
+    <style>
+        /* CSS Angaben */
+
+        body {
+            color: white;
+            font-size: medium;
+        }
+
+        p{
+            color:burlywood;
+        }
+
+        .texte {
+            color: aqua; /* überschreibt body */
+            margin: 0 auto; /* Box Position wird nicht weitervererbt (nichts passiert) */
+            font-style: italic;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #inhalt{
+            color: green;
+        }
+
+        #inhalt{  
+            color: red;
+        }
+
+        h1 span#inhalt { /* Id Regeln gelten nur im h1 tag (kontextabhängig individuell) */ 
+            color: blueviolet;
+        }
+
+        .texte p {
+            font-style: normal;
+        }
+
+        #bier{
+            color: orange;
+            font-style: normal !important;
+        }
+
+        p#bier {
+            font-style: italic;
+            color:brown;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- kontextabhängig Id wichtiger als nur Id */ -->
+    <h1>Übung zur <span id="inhalt">Vererbung und Kaskadierung</span></h1>
+
+    <div class="texte">
+        <!-- h1 span#inhalt gilt hier nicht, also rot -->
+        <p>Frische <span id="inhalt">Bretzeln</span> essen Asse des Gesangs.</p>
+
+        <p>Fischers Fritz fischt frische Fische.</p>
+
+        <p>Als Anna abends aß, aß Anna abends Ananas.</p>
+
+        <p>Brautkleid bleibt Brautkleid und Blaukraut bleibt Blaukraut.</p>
+
+        <!-- p#bier hat vorrang. !important überschreibt p#bier -->
+        <p id="bier">Bierbrauer Bauer braut braunes Bier, braunes Bier braut Bierbrauer Bauer.</p>
+
+
+    </div>
+  
+</body>
+
+</html>

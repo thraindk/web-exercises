@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:complexType name="AnschriftTyp">
+		<xs:sequence>
+			<xs:element name="Strasse" type="xs:string"/>
+			<xs:element name="Hausnr" type="xs:integer"/>
+			<xs:element name="Plz" type="xs:integer"/>
+			<xs:element name="Ort" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="PositionTyp">
+		
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="Menge" type="xs:integer"/>
+			<xs:element name="Einzelpreis" type="xs:float"/>
+			<xs:element name="Gesamtpreis" type="xs:float"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:integer" />
+	</xs:complexType>
+	
+	<xs:element name="Rechnung">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Anschrift" type="AnschriftTyp" />
+				<xs:element name="Datum" type="xs:date" />
+				<xs:element name="Positionen">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Position" type="PositionTyp" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

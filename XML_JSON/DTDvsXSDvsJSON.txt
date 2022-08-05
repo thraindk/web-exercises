@@ -1,0 +1,46 @@
+Zur Normierung des Datenaustauschs (Syntax/Grammatik)
+
+Extensible Markup Language (XML) als Untermenge von SGML -> Vollständige Meta-Sprache
+
+# Dokumenttypdefinition (DTD):
+-> Was sind im Element für Attribute drin (to, from, message) -> die Tags
+-> Keine präzisen Datentypen (#PCDATA) -> Können auch ext. Dokumente sein)
+-> DTD hat keine XML-Syntax -> nicht von XML Parser lesbar
+
+--note.dtd--
+<!DOCTYPE note [
+<!ELEMENT note (to,from,message)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT message (#PCDATA)>
+]>
+----
+
+--note.xml--
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE note SYSTEM "note.dtd">
+<note>
+  <to>Mr.X</to>
+  <from>Mr.Y</from>
+  <message>Stack Overflow is awesome</message>
+</note>
+----
+
+# XML Schema Definition (XSD) -> empfohlen (W3C):
+-> definiert Strukturen für XML
+-> selbst in XML
+-> einfache atomare (vgl. Java) xs:string, xs:decimal, xs:float (...) und XML spezifische (wie language) vs. komplexe Datentypen (<xs:complexType name="pc-specs">)
+-> vordefinierte vs. eigene Datentypen wie hier bsp. Monate auf Basis von int
+-> eigene Datentypen als Vereinigungsmenge von bereits bestehenden Typen (xs:union)
+-> XML Parser muss mit HTML im Browser erst aufgerufen werden um XML in DOM zu laden!
+-> Validierung bsp. mit https://www.freeformatter.com/xml-validator-xsd.html
+
+bsp. siehe PCs.xml computer.xsd
+
+# JavaScript Object Notation (JSON) 
+-> XML ist Auszeichnungssprache, JSON Datenaustauschformat
+-> Austausch strukturierter Daten zwischen Anwendungen, Client-Server, Serialisierung
+-> Beide zeichenweise Interpretation, keine Binärdaten
+-> JSON einfacher und geringerer Overhead
+-> JavaScript-Objekt im JSON Format -> Key-Value-Paare (assoz. Array)
+-> Jedes JSON-Objekt sollte ein gültiges JavaScript sein

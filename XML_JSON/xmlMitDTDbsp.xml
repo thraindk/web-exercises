@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE abteilung SYSTEM "abteilung.dtd">
+<abteilung>
+    <titel>Buchliste</titel>
+		<eintrag>
+			<b_name>Narrenturm</b_name>
+			<b_autor>Sapkowski</b_autor>
+		</eintrag>
+			<eintrag>
+				<b_name>Kohlhaas</b_name>
+				<b_autor>Kleist</b_autor>
+			</eintrag>
+</abteilung>

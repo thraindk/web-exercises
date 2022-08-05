@@ -1,0 +1,70 @@
+h1{
+    color:maroon;
+    font-size:4em;
+}
+
+.bild{
+    width:100px;
+    height:100px;
+    opacity:1.0;
+}
+
+.textabschnitt{
+    display:flex;
+    justify-content: space-between;
+}
+
+.text{
+    display:inline-block;
+    padding: 0 20px 0 20px;
+    width:50%;
+    border:1px;
+    color:red;  
+    font-family:'Times New Roman', Times, serif;
+    background-color:yellow;
+}
+
+/*Id überscheibt Klasse*/
+#test {
+    color: blue;
+}
+
+#amet {
+    color: white;
+}
+
+/*klasse + id hat höhere prio als id alleine */
+.text #test{
+    color:green;
+}
+
+.text #test #amet {
+    color: black;
+}
+
+/*Responsive Design*/
+@media screen and (max-width: 500px) and (min-width: 300px) {
+    * {
+        font-size: large;
+    }
+    .text{
+      background: red;  
+    }
+}
+
+
+
+#Anmeldung{
+    height:100px;
+    width:100px;
+}
+
+#tabelle {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#tabelle, th, td {
+    border: 2px solid red;
+    
+}

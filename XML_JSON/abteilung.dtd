@@ -1,0 +1,4 @@
+<!ELEMENT abteilung(titel, eintrag)>
+<!ELEMENT eintrag(b_name, b_autor)>
+<!ELEMENT b_name(#PCDATA)>
+<!ELEMENT b_autor(#PCDATA)>

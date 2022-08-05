@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- keine eigener Namespace, xsd ist im gleichen Verzeichnis (sonst URL name.xsd)-->
+<pc-liste xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="computer.xsd">
+
+<!-- Datentypen in der pc-liste ist "pc" vom Typ "computer" (s. xsd) -->
+    <pc>
+        <name>DELL</name>
+        <cpu>2100</cpu>
+        <ram>4</ram>
+    </pc>
+
+    <pc>
+        <name>LENOVO</name>
+        <cpu>3200</cpu>
+        <ram>16</ram>
+        <!-- <hdd>512</hdd> ungültig, da nicht definiert -->
+    </pc>
+
+</pc-liste>

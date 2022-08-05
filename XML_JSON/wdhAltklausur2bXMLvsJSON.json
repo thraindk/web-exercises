@@ -1,0 +1,20 @@
+{
+	"Rechnung" : {
+					"Anschrift" : {
+							"Strasse" : "straße",
+							"Hausnr" : 1,
+							"Plz" : 1234,
+							"Ort" : "stadt"
+					},
+					"Datum" : "2001-10-26",
+					"Positionen" : [
+					{
+						"id" : 1,
+						"Name" : "Socken",
+						"Menge" : 2,
+						"Einzelpreis" : 2.5,
+						"Gesamtpreis" : 10.0
+					}
+					]
+	}
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xs:schema elementFormDefault="qualified">
+
+<xs:simpleType name="monatInt">
+    <xs:restriction base="xs:integer">
+        <xs:minInclusive value="1"/>
+        <xs:maxInclusive value="12"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="monate">
+    <xs:list itemType="monatInt"/>
+</xs:simpleType>
+
+</xs:schema>

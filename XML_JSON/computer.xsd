@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- xs ist Standard-Namespace mit Standard value -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- eigene komplexe Datenstruktur -->
+<xs:complexType name="computer">
+
+    <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="cpu" type="xs:integer" minOccurs="0" maxOccurs="5000"/>
+        <xs:element name="ram" type="xs:integer" minOccurs="0"/>
+    </xs:sequence>
+
+    <xs:attribute name="id" type="xs:integer"/>
+
+</xs:complexType>
+
+<!-- Definition Liste davon -->
+<xs:element name="pc-liste">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="pc" type="computer" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

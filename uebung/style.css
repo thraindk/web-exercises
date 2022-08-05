@@ -1,0 +1,19 @@
+#h1 {
+	color: red;
+	font-style: italic;
+}
+
+#smiley {
+display: block;
+margin: 0 auto;
+}
+
+#tabelle, th, tr, td {
+	border: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+	#text{
+	background-color: lime;
+	}
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>&Uuml;bung</title>
+		<link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
+		<style>
+		#text {
+		font-family: Arial, sans-serif;
+		font-size: 1.2em;
+		}
+		#error {
+			color: red;
+		}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="https://www.google.de" target=_blank tabindex=1>Google</a></li>
+				<li><a href="https://www.bing.de" target=_blank tabindex=2>Bing</a></li>
+			</ul>
+		</nav>
+		<hr/>
+		<h1 id="h1">Gr&ouml;&szlig;te &Uuml;berschrift</h1>
+		
+		<div id="text">
+		<span style="font-weight: bold;">Lorem ipsum</span> dolor sit amet, <span style="text-decoration: underline;">consetetur sadipscing elitr</span>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+		</div>
+		<br/>
+		<img id="smiley" src="./smiley.png" alt="Smiley-Bild" height=100 width=100 />
+		<br/>
+		<table id="tabelle">
+			<thead>
+				<tr><th></th><th>User 1</th><th>User 2</th></tr>
+			<thead>
+			<tbody>
+				<tr><td>Zeit</td><td>1:20</td><td>2:14</td></tr>
+				<tr><td colspan=3>Summe</td></tr>
+			</tbody>
+		</table>
+		<br/>
+		<form action="login.php" method="post" id="formular" style="width: 50%; display: block; margin: 0 auto;">
+		<fieldset>
+			<legend>Formular</legend>
+			
+			<label for="feld_user">Benutzer: </label>
+			<input type="text" name="user" id="feld_user"/><br/>
+			
+			<input type="radio" name="essen" id="pizza" value="Pizza" checked />
+			<label for="pizza">Pizza</label>
+			
+			<input type="radio" name="essen" id="lasagne" value="Lasagne" />
+			<label for="lasagne">Lasagne</label><br/>
+			
+			<input type="checkbox" name="agb" id="agb" value="AGB"/>
+			<label for="agb">Ich habe die AGB gelesen und bin einverstanden.</label><br/>
+			<select name="rolle" id="rolle">
+				<option>Mitglied</option>
+				<option>Gast</option>
+			</select>
+			<input type="submit" name="submit" id="submit" value="absenden"/>
+			<div id="error"></div>
+		</fieldset>
+		</form>
+	</body>
+	<!-- <script src="./script.js"></script> -->
+</html>
